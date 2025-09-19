@@ -1,0 +1,17 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+//    "target": "ES2017",        // or higher: ES2018, ES2020, ES2022, ESNext
+//    "module": "ES2022",        // or ESNext, Node16, NodeNext
+    "moduleResolution": "Node",
+    "lib": ["ES2022"],         // ensure the right lib features are included
+    "composite": true,
+    "declaration": true,
+    "outDir": "dist",
+    "rootDir": "src",
+    "strictPropertyInitialization": false,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+  },
+  "include": ["src"]
+}
