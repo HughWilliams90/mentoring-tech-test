@@ -1,0 +1,32 @@
+services:
+  db:
+    image: mysql:8.1
+    container_name: mysql_container
+    restart: always
+    environment:
+      MYSQL_DATABASE: database
+      MYSQL_ALLOW_EMPTY_PASSWORD: 'true'
+    ports:
+      - "3309:3306"
+    volumes:
+      - ./libs/domain:/docker-entrypoint-initdb.d  # Mount SQL files for initialization
+      - mysql_data:/var/lib/mysql
+
+
+  ui:
+    build:
+      context: ./apps/frontend
+      dockerfile: Dockerfile
+    container_name: frontend
+    ports:
+      - "3200:3000"
+    working_dir: /app
+    volumes:
+      - ./apps/frontend:/app
+      - /app/node_modules
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    command: npm run dev
+
+volumes:
+  mysql_data:

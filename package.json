@@ -1,0 +1,12 @@
+{
+  "workspaces": [
+    "apps/*",
+    "libs/*"
+  ],
+  "packageManager": "npm@10.9.2",
+  "devDependencies": {
+    "@types/react": "^19.1.13",
+    "@types/react-dom": "^19.1.9",
+    "turbo": "^2.5.6"
+  }
+}
