@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@domain": ["libs/domain/src"],
+      "@domain/*": ["libs/domain/src/*"]
+    }
+  }
+}

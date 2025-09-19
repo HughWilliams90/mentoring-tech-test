@@ -1,0 +1,19 @@
+{
+  "name": "@mentoring/domain",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -b",
+    "check-types": "tsc --noEmit",
+    "dev": "tsc --watch"
+  },
+  "dependencies": {
+    "mysql2": "^3.15.0",
+    "reflect-metadata": "^0.2.2",
+    "typeorm": "^0.3.27"
+  },
+  "devDependencies": {
+    "@types/node": "^24.5.2"
+  }
+}

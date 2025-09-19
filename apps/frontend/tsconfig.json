@@ -1,0 +1,12 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "dist",
+    "jsx": "react",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "types": ["jest", "node", "react", "@testing-library/jest-dom"],
+  },
+  "include": ["src", "./jest-setup.ts"]
+}
