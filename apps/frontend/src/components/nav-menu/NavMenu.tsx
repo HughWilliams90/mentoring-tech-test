@@ -84,7 +84,7 @@ const Tab = ({id, title, path, icon}: Tab) => {
 
 const tabs: Tab[] = [
     {title: 'Home', id: 'Home', path: '/', icon: <HomeIcon color="primary"/>},
-    {title: 'Doshbard', id: 'Dashboard', path: '/dashboard', icon: <DashboardIcon color="primary"/>},
+    {title: 'Dashboard', id: 'Dashboard', path: '/dashboard', icon: <DashboardIcon color="primary"/>},
     {title: 'Calculations', id: 'Calculations', path: '/calculations', icon: <DashboardIcon color="primary"/>},
 ];
 
