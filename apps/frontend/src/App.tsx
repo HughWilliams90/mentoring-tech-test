@@ -8,7 +8,7 @@ import {Landing} from "./pages/Landing/Landing";
 import {localStoragePersister, queryClient} from "./services/query.client";
 import {PersistQueryClientProvider} from '@tanstack/react-query-persist-client';
 import Outfit from './fonts/Outfit-Regular.ttf';
-import {Calculations} from "./pages/calculations/Calculations.jsx";
+import {Calculations} from "./pages/calculations/Calculations";
 import {Documentation} from "./pages/documentation/Documentation";
 
 const darkTheme = createTheme({

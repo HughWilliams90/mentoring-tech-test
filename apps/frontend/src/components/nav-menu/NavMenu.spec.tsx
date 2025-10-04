@@ -16,7 +16,7 @@ describe('mainNav', () => {
         const dashboardTab = screen.getByTestId('Dashboard');
 
         expect(dashboardTab).toBeInTheDocument();
-        expect(dashboardTab.textContent).toBe("Doshbard")
+        expect(dashboardTab.textContent).toBe("Dashboard")
         expect(landingTab).toBeInTheDocument();
         expect(landingTab.textContent).toBe("Home");
     })

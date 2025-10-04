@@ -1,10 +1,10 @@
 import React from "react";
 import {Box, Divider, Typography} from "@mui/material";
-import {Dropdown} from "../../components/Dropdown.tsx";
-import {Input} from "../../components/Input.tsx";
-import {BMICalculator} from "../../components/bmi-calculator/BMICalculator.tsx";
-import {useHealth} from "../../stores/health.store.ts";
-import {CalorieCalculator} from "../../components/calorie-calculator/CalorieCalculator.tsx";
+import {Dropdown} from "../../components/Dropdown";
+import {Input} from "../../components/Input";
+import {BMICalculator} from "../../components/bmi-calculator/BMICalculator";
+import {Sex, useHealth} from "../../stores/health.store";
+import {CalorieCalculator} from "../../components/calorie-calculator/CalorieCalculator";
 
 export const Calculations = () => {
     const {
@@ -25,7 +25,7 @@ export const Calculations = () => {
                     label={'Sex'}
                     currentValue={sex}
                     options={[{label: 'Male', value: 'Male'}, {label: 'Female', value: 'female'}]}
-                    onChange={(value) => setSex(value)}
+                    onChange={(value: Sex) => setSex(value)}
                 />
                 <Input label={'Age'} value={age} onChange={(value) => setAge(+value)} />
                 <Input label={'Weight'} value={weight} onChange={(value) => setWeight(+value)} />

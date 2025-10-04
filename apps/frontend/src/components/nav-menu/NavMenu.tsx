@@ -87,7 +87,7 @@ const Tab = ({id, title, path, icon}: Tab) => {
 const tabs: Tab[] = [
     {title: 'Home', id: 'Home', path: '/', icon: <HomeIcon color="primary"/>},
     {title: 'Documentation', id: 'Documentation', path: '/documentation', icon: <LibraryBooksIcon color="primary"/>},
-    {title: 'Doshbard', id: 'Dashboard', path: '/dashboard', icon: <DashboardIcon color="primary"/>},
+    {title: 'Dashboard', id: 'Dashboard', path: '/dashboard', icon: <DashboardIcon color="primary"/>},
     {title: 'Calculations', id: 'Calculations', path: '/calculations', icon: <CalculateIcon color="primary"/>},
 ];
 
@@ -114,5 +114,6 @@ const collapseStyles = (open: boolean) => css`
     .MuiCollapse-wrapperInner {
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
     }
 `;

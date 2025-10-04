@@ -18,7 +18,7 @@ export const useHealth: UseBoundStore<StoreApi<HealthState>> = create((set) => (
     height: undefined,
     weight: undefined,
     age: undefined,
-    setSex: (sex: string) => set((state: HealthState) => {
+    setSex: (sex: Sex) => set((state: HealthState) => {
        return {...state, sex};
     }),
     setHeight: (height: number) => set((state: HealthState) => {
